@@ -10,7 +10,7 @@ const Discussion_table = () => {
 
   const fetchDiscussions = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/discussion');
+      const response = await axios.get('https://backend-for-indian-science.onrender.com/discussion');
       setDiscussions(response.data.discussions);
     } catch (error) {
       console.log(error);

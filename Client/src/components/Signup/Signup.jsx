@@ -17,7 +17,7 @@ export const Signup = () => {
     e.preventDefault();
     try {
       await axios
-        .post('http://localhost:8000/signup', {
+        .post('https://backend-for-indian-science.onrender.com/signup', {
           email,
           password,
           name,

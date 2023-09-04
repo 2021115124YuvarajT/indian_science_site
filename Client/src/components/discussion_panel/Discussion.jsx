@@ -14,7 +14,7 @@ const Discussion = () => {
   async function submit(e){
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/discussion', { email, doubts })
+      await axios.post('https://backend-for-indian-science.onrender.com/discussion', { email, doubts })
       .then(res=>{
         if(res.data == "done"){
           setSuccessMessage("doubts submitted successfully!");
@@ -30,7 +30,7 @@ const Discussion = () => {
 
 const fetchDiscussions = async () => {
   try {
-    const response = await axios.get('http://localhost:8000/discussion');
+    const response = await axios.get('https://backend-for-indian-science.onrender.com/discussion');
     setDiscussions(response.data.discussions);
   } catch (error) {
     console.log(error);

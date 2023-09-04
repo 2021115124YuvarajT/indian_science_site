@@ -37,7 +37,7 @@ export const Login = () => {
   async function submit(e) {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/', {
+      const response = await axios.post('https://backend-for-indian-science.onrender.com/', {
         email,
         password,
       });
