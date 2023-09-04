@@ -5,7 +5,7 @@ const app = express();
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 const session =require('express-session');
-const mongoURI = "mongodb://127.0.0.1:27017/sessions"
+const mongoURI = "mongodb+srv://yuvaraj:abcd1234@cluster0.ov1fxpz.mongodb.net/sessions"
 
 const MongoDBSession = require('connect-mongodb-session')(session);
 const store = new MongoDBSession({
